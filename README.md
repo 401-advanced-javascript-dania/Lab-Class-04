@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/401-advanced-javascript-dania/Lab-Class-04/pull/1)
 - [ci/cd] (https://github.com/401-advanced-javascript-dania/Lab-Class-04/commit/14fb51655d41b3659e6cc953dc049eddcfa9be4d/checks?check_suite_id=414254233)
 
 
