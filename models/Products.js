@@ -6,7 +6,7 @@ class Products extends DataModel {
         this.schema={
             category_id:{type:'string',required:true},
             price:{type:'number',required:true},
-            weight:Number,
+            weight:{type:'nnumber'},
             quantity_in_stock:{type:'number',required:true}    
         }
     }
