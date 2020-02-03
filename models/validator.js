@@ -1,17 +1,17 @@
-'use strict';
+
 
 class Validator {
   constructor(str , num ,arr ,obj ,func ,bool){
-    this.str=str;
-    this.num=num;
-    this.arr=arr;
-    this.obj=obj;
-    this.func=func;
-    this.bool=bool
+    this.str = str;
+    this.num = num;
+    this.arr = arr;
+    this.obj = obj;
+    this.func = func;
+    this.bool = bool;
   }
 
 
-  
+
   /**
    * Based on a set of rules, is the input valid?
    * TODO: Define the rules ... how do we send them in? How do we identify?
@@ -20,19 +20,19 @@ class Validator {
    * @returns {boolean}
    */
   isValid (input, rules) {
-    
-  
+
+
     return true;
-  };
-  
+  }
+
   /**
    * Is this a string?
    * @param input
    * @returns {boolean}
    */
-isString  (input) {
+  isString  (input) {
     return typeof input === 'string';
-  };
+  }
   /**
    * Is this a number?
    * @param input
@@ -56,7 +56,7 @@ isString  (input) {
    */
   isObject  (input) {
     return typeof input === 'object';
-  };
+  }
   /**
    * Is this an array?
    * @param input
@@ -64,7 +64,7 @@ isString  (input) {
    */
   isArray  (input) {
     return Array.isArray(input);
-  };
+  }
   /**
    * Is this an function?
    * @param input
@@ -72,25 +72,25 @@ isString  (input) {
    */
   isFunction  (input) {
     return typeof input === 'function';
-  };
+  }
   /**
    *Is it has a Keys?
    * @param input
    * @returns {boolean}
    */
-isItHasAKeys (input){
+  isItHasAKeys (input){
     if(Object.keys(input)){
-  return true;
+      return true;
     }}
-    /**
+  /**
    *Is the type of values matches?
    * @param input
    * @returns {boolean}
    */
-   
-    isTheTypeOfValuesMatches(input){
-  return Object.values(input).every(val=>typeof val==='string'||typeof val==='number'||typeof val==='object'||typeof val=== 'boolean'
-) 
+
+  isTheTypeOfValuesMatches(input){
+    return Object.values(input).every(val=>typeof val === 'string' || typeof val === 'number' || typeof val === 'object' || typeof val === 'boolean'
+    );
   }
   /**
    *Is there array?
@@ -98,7 +98,7 @@ isItHasAKeys (input){
    * @returns {boolean}
    */
   isThereArray(input){
-  return Object.values(input).every(val=>typeof val==='object'&& val===null)
+    return Object.values(input).every(val=>typeof val === 'object' && val === null);
   }
   /**
    *Is the input value of the array iatring of yes or no?
@@ -106,6 +106,6 @@ isItHasAKeys (input){
    * @returns {boolean}
    */
   isTheValueOfTheArrrayIsYesOrNo(input){
-    return Object.values(input).every(val=>typeof val==='string'|| val==='yes'|| val==='no')
-    }}
-    module.exports=Validator; 
+    return Object.values(input).every(val=>typeof val === 'string' || val === 'yes' || val === 'no');
+  }}
+module.exports = Validator;
