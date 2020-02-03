@@ -1,0 +1,27 @@
+{
+  "name": "Lab-Class-04",
+  "version": "1.0.0",
+  "description": "- [submission PR]()\r - [ci/cd] (https://github.com/401-advanced-javascript-dania/Lab-Class-04/commit/14fb51655d41b3659e6cc953dc049eddcfa9be4d/checks?check_suite_id=414254233)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --verbose --coverage --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-dania/Lab-Class-04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-dania/Lab-Class-04/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-dania/Lab-Class-04#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "uuid": "^3.4.0"
+  }
+}
